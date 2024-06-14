@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\git\\Tozawa3DActionGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B846318C-5E0C-1394-FEE8-2A742BEEC50D}|Assembly-CSharp.csproj|c:\\git\\tozawa3dactiongame\\assets\\tozawacreation\\scripts\\refactaringscripts\\characteranimate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B846318C-5E0C-1394-FEE8-2A742BEEC50D}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\refactaringscripts\\characteranimate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B846318C-5E0C-1394-FEE8-2A742BEEC50D}|Assembly-CSharp.csproj|c:\\git\\tozawa3dactiongame\\assets\\tozawacreation\\scripts\\refactaringscripts\\timelimit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B846318C-5E0C-1394-FEE8-2A742BEEC50D}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\refactaringscripts\\timelimit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B846318C-5E0C-1394-FEE8-2A742BEEC50D}|Assembly-CSharp.csproj|c:\\git\\tozawa3dactiongame\\assets\\tozawacreation\\scripts\\refactaringscripts\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B846318C-5E0C-1394-FEE8-2A742BEEC50D}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\refactaringscripts\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimeLimit.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa3DActionGame\\Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\TimeLimit.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\TimeLimit.cs",
+              "ToolTip": "C:\\git\\Tozawa3DActionGame\\Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\TimeLimit.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\TimeLimit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:35:44.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterAnimate.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa3DActionGame\\Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\CharacterAnimate.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\CharacterAnimate.cs",
+              "ToolTip": "C:\\git\\Tozawa3DActionGame\\Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\CharacterAnimate.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\CharacterAnimate.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:35:32.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa3DActionGame\\Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\PlayerInput.cs",
+              "ToolTip": "C:\\git\\Tozawa3DActionGame\\Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\RefactaringScripts\\PlayerInput.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAgwHMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:35:16.677Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
