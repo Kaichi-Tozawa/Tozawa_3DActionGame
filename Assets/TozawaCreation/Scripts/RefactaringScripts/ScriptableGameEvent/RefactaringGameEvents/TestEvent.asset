@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92d4b58bd24fcc4b88619a47ac0b33e, type: 3}
+  m_Name: TestEvent
+  m_EditorClassIdentifier: 
+  _eventPrefabs:
+  - {fileID: 4312580343240139412, guid: 3ac464b5e49a75f41b832d49e6034f09, type: 3}
+  _descriptionText: "\u30C6\u30B9\u30C8\u7528\u30A4\u30D9\u30F3\u30C8\n"
+  _staticevents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4211104098121029394, guid: 3ac464b5e49a75f41b832d49e6034f09, type: 3}
+        m_TargetAssemblyTypeName: TestScript, Assembly-CSharp
+        m_MethodName: Test
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u5F15\u6570\u554F\u984C\u89E3\u6C7A"
+          m_BoolArgument: 0
+        m_CallState: 2

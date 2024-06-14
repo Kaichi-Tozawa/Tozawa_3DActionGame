@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92d4b58bd24fcc4b88619a47ac0b33e, type: 3}
+  m_Name: GameFinishEvent
+  m_EditorClassIdentifier: 
+  _eventPrefabs:
+  - {fileID: 4920950405428728450, guid: dd20b4fcb1d2c6f4a80999a6a69515aa, type: 3}
+  _descriptionText: "\u30D7\u30EC\u30A4\u30E4\u30FC\u5074\u306E\u5168\u6EC5\u304B\u30DC\u30B9\u306E\u8A0E\u4F10\u6642\u306B\u767A\u884C\u3055\u308C\u308B\u30A4\u30D9\u30F3\u30C8\n\u30AB\u30E1\u30E9\u306E\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u306E\u5B9F\u884C\u3068\u6F14\u51FA\u4E2D\u306E\u30B9\u30ED\u30FC\u30E2\u30FC\u30B7\u30E7\u30F3"
+  _staticevents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4920950405428728508, guid: dd20b4fcb1d2c6f4a80999a6a69515aa, type: 3}
+        m_TargetAssemblyTypeName: GameConclusionSlowMotion, Assembly-CSharp
+        m_MethodName: SlowMotion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

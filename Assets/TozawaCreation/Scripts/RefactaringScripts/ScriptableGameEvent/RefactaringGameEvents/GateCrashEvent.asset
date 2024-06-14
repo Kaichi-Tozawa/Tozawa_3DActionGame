@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92d4b58bd24fcc4b88619a47ac0b33e, type: 3}
+  m_Name: GateCrashEvent
+  m_EditorClassIdentifier: 
+  _eventPrefabs:
+  - {fileID: 6243957160110215350, guid: 136a5668d8e8d0147809203615fc4047, type: 3}
+  _descriptionText: "\u9580\u304C\u7834\u58CA\u3055\u308C\u305F\u6642\u306B\u767A\u884C\u3055\u308C\u308B\u30A4\u30D9\u30F3\u30C8\n\u30DC\u30B9\u3092\u751F\u6210\u3059\u308B\n\u751F\u6210\u4F4D\u7F6E\u306A\u3069\u5834\u306E\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9\u304C\u5FC5\u8981\u306A\u306E\u3067\u51E6\u7406\u306FEventWaiting\u5074\u3067\u8A2D\u5B9A\n"
+  _staticevents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4136279340611487577, guid: 136a5668d8e8d0147809203615fc4047, type: 3}
+        m_TargetAssemblyTypeName: UnitCreator, Assembly-CSharp
+        m_MethodName: CreateUnit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
