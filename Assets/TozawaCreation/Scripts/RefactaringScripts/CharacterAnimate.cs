@@ -40,6 +40,5 @@ public class CharacterAnimate :IAttackAnimate,IMoveAnimate
     void IPauseAble.Reboot()
     {
         _playerAnim.speed = _currentAnimSpeed;
-        Debug.Log("アニメーション再開" + _currentAnimSpeed);
     }
 }

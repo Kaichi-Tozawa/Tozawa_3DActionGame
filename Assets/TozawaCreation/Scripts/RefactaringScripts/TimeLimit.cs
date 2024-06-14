@@ -48,6 +48,5 @@ public class TimeLimit : MonoBehaviour,IPauseAble
     {
         _isTimerActive = true;
         _onTimerStart.Invoke();
-        Debug.Log("タイマーリスタート");
     }
 }

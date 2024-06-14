@@ -114,6 +114,5 @@ public class PlayerInput : MonoBehaviour,IPauseAble
         _move.Reboot();
         _moveAnimate.Reboot();
         _isPause = false;
-        Debug.Log(_isPause);
     }
 }
