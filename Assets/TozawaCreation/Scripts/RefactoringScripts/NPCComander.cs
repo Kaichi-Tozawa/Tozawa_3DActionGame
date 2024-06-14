@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class NPCComander : MonoBehaviour,IPauseAble,INPCComander
+public class NPCComander : MonoBehaviour,IPause,INPCComander
 {
     [SerializeField, Header("各ステートの稼働時間")] float[] _workTimes = new float[Enum.GetValues(typeof(NPCState)).Length];
     [SerializeField, Header("移動速度")] float _moveSpeed = 5f;
@@ -182,7 +182,7 @@ public class NPCComander : MonoBehaviour,IPauseAble,INPCComander
         
     }
 
-    void IPauseAble.Pause()
+    void IPause.Pause()
     {
         StopAllCoroutines();
         _isPause = true;
@@ -190,7 +190,7 @@ public class NPCComander : MonoBehaviour,IPauseAble,INPCComander
         _iMove.Pause();
     }
 
-    void IPauseAble.Reboot()
+    void IPause.Reboot()
     {
         StartTimer();
         _isPause = false;

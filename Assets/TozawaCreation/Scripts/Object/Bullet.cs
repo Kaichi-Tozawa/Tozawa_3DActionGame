@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour,IPauseAble
+public class Bullet : MonoBehaviour,IPause
 {
     float _bulletSpeed;
     BulletType _currentType;
@@ -39,7 +39,6 @@ public class Bullet : MonoBehaviour,IPauseAble
         if(_currentType == BulletType.Homing )
         {
             GetTarget();
-            
         }
     }
 

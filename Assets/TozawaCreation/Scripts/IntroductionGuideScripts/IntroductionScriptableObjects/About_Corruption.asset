@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad456096e1346a74aa0de19d03d4c0bf, type: 3}
-  m_Name: AboutUnion
+  m_Name: About_Corruption
   m_EditorClassIdentifier: 
-  _Image: {fileID: 21300000, guid: ce1d3440ebec578488121a60c8ce38b1, type: 3}
-  _introductionText: "\u540C\u3058\u30B9\u30B1\u30EB\u30C8\u30F3\u3092\u8FFD\u5F93\u3055\u305B\u308B\u3068\u5408\u4F53\u9032\u5316\u3059\u308B"
+  _Image: {fileID: 21300000, guid: 01084701ad22a5849aa120fa6a1930b0, type: 3}
+  _introductionText: "\u30A8\u30EA\u30A2\u306B\u7559\u307E\u3063\u3066\u5927\u5730\u3092\u6C5A\u67D3\u3057\u6709\u5229\u306B\u3057\u3088\u3046"

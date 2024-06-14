@@ -6,7 +6,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class UnitCreator : MonoBehaviour,IPauseAble,IUnitCreator
+public class UnitCreator : MonoBehaviour,IPause,IUnitCreator
 {
 
     [SerializeField, Header("ê∂ê¨Ç∑ÇÈUnit")] GameObject _unit;

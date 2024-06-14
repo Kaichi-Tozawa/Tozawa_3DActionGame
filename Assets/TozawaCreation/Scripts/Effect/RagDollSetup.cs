@@ -10,22 +10,22 @@ using UnityEngine;
 public class RagDollSetup : MonoBehaviour
 {
     [SerializeField] Transform _rootBone;
-    
-    public void SetUp(Transform originalrootbone)
+
+    public void SetUp(Transform originalroot)
     {
-        CloneTransforms(originalrootbone,_rootBone);
+        CloneTransforms(originalroot,_rootBone);
     }
 
     private void CloneTransforms(Transform root, Transform clone)
     {
         foreach(Transform child in root)
         {
-            Transform clonechilde = clone.Find(child.name);
-            if(clonechilde != null)
+            Transform clonechild = clone.Find(child.name);
+            if(clonechild != null)
             {
-                clonechilde.position = child.position;
-                clonechilde.rotation = child.rotation;
-                CloneTransforms(child, clonechilde);
+                clonechild.position = child.position;
+                clonechild.rotation = child.rotation;
+                CloneTransforms(child, clonechild);
             }
         }
     }

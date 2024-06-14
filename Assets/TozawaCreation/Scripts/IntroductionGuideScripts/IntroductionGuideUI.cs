@@ -44,5 +44,4 @@ public class IntroductionGuideUI : MonoBehaviour
         _restartEvent.EventOccurrence();
         Destroy(this.gameObject);
     }
-    
 }

@@ -44,13 +44,13 @@ public class MoveByVelocity : IMove
         return _moveSpeed;
     }
 
-    void IPauseAble.Pause()
+    void IPause.Pause()
     {
         _currentVelocity = _rb.velocity;
         _rb.velocity = Vector3.zero;
     }
 
-    void IPauseAble.Reboot()
+    void IPause.Reboot()
     {
         _rb.velocity = _currentVelocity;
     }

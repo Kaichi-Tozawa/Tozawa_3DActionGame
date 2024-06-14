@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// レンダラーについているマテリアルのタイリングやオフセットを動かし続けるコンポーネント
 /// </summary>
-public class MaterialSufaceAnimation : MonoBehaviour,IPauseAble
+public class MaterialSufaceAnimation : MonoBehaviour,IPause
 {
     [SerializeField] float _offsetsY = 0.7f;
     Renderer _currentRenderer;
@@ -28,12 +28,12 @@ public class MaterialSufaceAnimation : MonoBehaviour,IPauseAble
         }
     }
 
-    void IPauseAble.Pause()
+    void IPause.Pause()
     {
         _active = false;
     }
 
-    void IPauseAble.Reboot()
+    void IPause.Reboot()
     {
         _active |= false;
     }

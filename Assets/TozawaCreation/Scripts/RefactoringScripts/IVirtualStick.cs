@@ -1,4 +1,4 @@
-interface IVirtualStick : IPauseAble
+interface IVirtualStick : IPause
 {
     /// <summary>
     /// ‰¡•ûŒü‚Ì“ü—Í‚ð•Ô‚·

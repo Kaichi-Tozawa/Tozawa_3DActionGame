@@ -4,17 +4,17 @@ using UnityEngine;
 /// <summary>
 /// パーティクルやラグドールなどを任意の時間で消滅させるコンポーネント
 /// </summary>
-public class EffectLifeTime : MonoBehaviour,IPauseAble
+public class EffectLifeTime : MonoBehaviour,IPause
 {
     [SerializeField] float _lifeTime;
-    float _erapseTime = 0;
+    float _erapsedTime = 0;
     private void Start()
     {
         Invoke(nameof(DestroyThis), _lifeTime);
     }
     private void Update()
     {
-        _erapseTime += Time.deltaTime;
+        _erapsedTime += Time.deltaTime;
     }
     public void DestroyThis()
     {
@@ -28,12 +28,11 @@ public class EffectLifeTime : MonoBehaviour,IPauseAble
 
     public void Reboot()
     {
-        float time = _lifeTime - _erapseTime;
+        float time = _lifeTime - _erapsedTime;
         if (time < 0)
         {
             time = 0;
         }
         Invoke(nameof(DestroyThis), time);
-        
     }
 }

@@ -31,13 +31,13 @@ public class CharacterAnimate :IAttackAnimate,IMoveAnimate
         AnimParamerterDividing.SetParam(ref _playerAnim, paramname,onoff);
     }
 
-    void IPauseAble.Pause()
+    void IPause.Pause()
     {
         
         _playerAnim.speed = 0;
     }
 
-    void IPauseAble.Reboot()
+    void IPause.Reboot()
     {
         _playerAnim.speed = _currentAnimSpeed;
     }

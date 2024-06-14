@@ -12,7 +12,7 @@ using Random = UnityEngine.Random;
 /// 及びプレイヤーがそのエリアにいるか・プレイヤーによって汚染されたかどうかを
 /// 管理するコンポーネント
 /// </summary>
-public class AreaManager : MonoBehaviour,IPauseAble
+public class AreaManager : MonoBehaviour,IPause
 {
     [SerializeField, Header("墓・兵舎の生成位置")] Transform _objectCreatePos;
     [SerializeField, Header("敵の生成位置候補")] Transform[] _enemyCreatePoss;
@@ -122,12 +122,12 @@ public class AreaManager : MonoBehaviour,IPauseAble
         }
     }
 
-    void IPauseAble.Pause()
+    void IPause.Pause()
     {
         _isActive = false;
     }
 
-    void IPauseAble.Reboot()
+    void IPause.Reboot()
     {
         _isActive = true;
     }

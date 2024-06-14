@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [DefaultExecutionOrder(1)]
-public class PlayerInput : MonoBehaviour,IPauseAble
+public class PlayerInput : MonoBehaviour,IPause
 {
     [SerializeField, Header("移動速度")] float _moveSpeed;
     [SerializeField,Header("アニメーション移動パラメーターの名前")] string _defaultMoveParamName;

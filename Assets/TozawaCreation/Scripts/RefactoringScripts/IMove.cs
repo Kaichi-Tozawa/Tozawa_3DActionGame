@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-interface IMove:IPauseAble
+interface IMove:IPause
 {
     public float MoveSpeed();
     public void Move(Vector3 dir);

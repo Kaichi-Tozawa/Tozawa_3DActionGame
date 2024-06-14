@@ -4,7 +4,7 @@ using UnityEngine;
 /// <summary>
 /// ポーズ機能インターフェース
 /// </summary>
-interface IPauseAble
+interface IPause
 {
     /// <summary>
     /// ポーズ中に動いてほしくないもの全てを停止させてください

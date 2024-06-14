@@ -16,7 +16,7 @@ public class StopEventHandler : MonoBehaviour
     /// </summary>
     public void StopAll()
     {
-        foreach (var obj in FindObjectsOfType<GameObject>().Select(x => x.GetComponent<IPauseAble>())) 
+        foreach (var obj in FindObjectsOfType<GameObject>().Select(x => x.GetComponent<IPause>())) 
         {
             if (obj != null)
             {
@@ -30,7 +30,7 @@ public class StopEventHandler : MonoBehaviour
     /// </summary>
     public void ReStart()
     {
-        foreach (var obj in FindObjectsOfType<GameObject>().Select(x => x.GetComponent<IPauseAble>()))
+        foreach (var obj in FindObjectsOfType<GameObject>().Select(x => x.GetComponent<IPause>()))
         {
             if (obj != null)
             {
