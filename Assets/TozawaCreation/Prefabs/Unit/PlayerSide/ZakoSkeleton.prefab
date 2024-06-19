@@ -585,8 +585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d2b61a39d33f04090c895b1f323c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackPower: 3
-  _impactPower: 1
+  _damage: 3
+  _impact: 0
   _hitEffect: {fileID: 8400184054722682649, guid: 79052b7c0c5195b418ac8edee4c14839, type: 3}
   _attackRangeCenter: {x: 0, y: 1, z: 1}
   _attackRangeRadius: 1

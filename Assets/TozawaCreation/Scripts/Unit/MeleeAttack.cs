@@ -12,27 +12,28 @@ namespace Attack
         [SerializeField, Header("攻撃範囲球体の中心点")] Vector3 _attackRangeCenter;
         [SerializeField, Header("攻撃範囲球体の半径")] float _attackRangeRadius;
         IHealth _targetIH;
-        protected float AttackRangeRadius
+        protected float AttackRangeRadius()
         {
-            get { return _attackRangeRadius; }
+            return _attackRangeRadius; 
         }
+
         /// <summary>
         /// 全ての近接攻撃はPhysics.Overlapで攻撃処理を行う。これはアニメーションイベントから呼ばれる関数である
         /// </summary>
-        public virtual void AttackEvent()
+        private protected override void AttackEvent()
         {
             foreach (var target in Physics.OverlapSphere(GetAttackRangeCenter(), _attackRangeRadius)
                 .Where(x =>
-                !x.gameObject.CompareTag(base.OwnTag)
+                !x.gameObject.CompareTag(base.OwnTag())
                 && x.TryGetComponent<IHealth>(out _targetIH)))
             {
                 var _targetRB = target.GetComponent<Rigidbody>();
                 if (_targetRB != null) 
                 {
-                    _targetRB.AddForce(this.transform.forward * base.ImpactPower, ForceMode.Impulse);
+                    _targetRB.AddForce(this.transform.forward * base.ImpactPower(), ForceMode.Impulse);
                 }
-                _targetIH.TakeDamage((int)base.AttackPower);
-                Instantiate(base.HitEffect, GetAttackRangeCenter(), this.transform.rotation);
+                _targetIH.TakeDamage(base.DamagePower());
+                Instantiate(base.HitEffect(), GetAttackRangeCenter(), this.transform.rotation);
             }
         }
         /// <summary>

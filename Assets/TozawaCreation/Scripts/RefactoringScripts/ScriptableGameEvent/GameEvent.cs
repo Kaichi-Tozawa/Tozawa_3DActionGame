@@ -38,7 +38,7 @@ public class GameEvent : ScriptableObject,IGameEvent
             }
             catch(System.Exception e) 
             {
-                UnityEngine.Debug.LogError(e.StackTrace+_staticevents);
+                UnityEngine.Debug.LogError(e.StackTrace+_staticevents +_descriptionText);
                 throw;
             }
         }

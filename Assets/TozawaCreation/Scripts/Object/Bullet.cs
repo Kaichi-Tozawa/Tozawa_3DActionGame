@@ -1,3 +1,4 @@
+using Attack;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -5,120 +6,89 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour,IPause
 {
-    float _bulletSpeed;
-    BulletType _currentType;
-    string _targetTag;
-    float _impact;
-    int _damage;
-    GameObject _hitEffect;
     GameObject _targetObject;
     Rigidbody _rb;
-    string _ownTag;
-
+    float _bulletSpeed;
+    float _impact;
+    int _damage;
     bool _isActive = true;
-
-    public int Damage
-    { set { _damage = value; } }
-    public float Impact
-    { set { _impact = value; } }
-    public float BulletSpeed
-    {  set { _bulletSpeed = value; } }
-    public GameObject HitEffect
-    { set { _hitEffect = value; } }
-    public string OwnTag
-    { set { _ownTag = value; } }
-    public BulletType CurrentType
-    { set { _currentType = value; } }
-    const string PLAYER_TAG = "PlayerSide";
-    const string ENEMY_TAG = "EnemySide";
+    string _targetTag;
+    BulletType _currentType;
     Vector3 _temporaryVerocity = Vector3.zero;
+
+    public void Reload(BulletInfo info)
+    {
+        _damage = info.damage;
+        _impact = info.impactpow;
+        _bulletSpeed = info.bulletspeed;
+        _targetTag = info.enemytag;
+        _currentType = info.bulletType;
+    }
     private void Start()
     {
-        _targetTag = (_ownTag == PLAYER_TAG) ? ENEMY_TAG : PLAYER_TAG;
+        _targetTag = this.tag == "PlayerSide" ? "EnemySIde" : "PlayerSide";
         _rb = GetComponent<Rigidbody>();
         if(_currentType == BulletType.Homing )
         {
-            GetTarget();
+            _targetObject = GetTarget();
+            Debug.Log(_targetObject.name);
         }
     }
 
-    void GetTarget()
+    GameObject GetTarget()
     {
         try
         {
-            GameObject mostNearObject = GameObject.FindGameObjectsWithTag(_targetTag).Where(x => x.GetComponent<NPCComander>())
+            GameObject mostNearObject = GameObject.FindGameObjectsWithTag(_targetTag)
+                .Where(x => x.GetComponent<Health>())
                 .Aggregate((current, next) =>
                 Vector3.Distance(current.transform.position, transform.position)
                 < Vector3.Distance(next.transform.position, transform.position) ? current : next);
-            _targetObject = mostNearObject;
+            return mostNearObject;
         }
         catch (System.InvalidOperationException)
         {
-            _targetObject = this.gameObject;
+            return this.gameObject;
         }
     }
     private void FixedUpdate()
     {
         if(_isActive)
         {
-            switch (_currentType)
-            {
-                case BulletType.Straight:
-                    GoStraight();
-                    break;
-                case BulletType.Homing:
-                    Homing();
-                    break;
-            }
+            BulletMove();
+            _rb.velocity = this.transform.forward * _bulletSpeed;
         }
+    }
+    void BulletMove()
+    {
+        if (_currentType == BulletType.Straight)
+            return;
+        if(_targetObject==this.gameObject || _targetObject == null)
+            return;
+        var dir = _targetObject.transform.position;
+        dir.y = 0;
+        transform.LookAt(dir);
+        Debug.Log("ホーミング中");
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag(_targetTag))
-        {
-            if (_hitEffect)
-            {
-                Instantiate(_hitEffect, collision.transform.position, this.transform.rotation);
-            }
-            if (collision.gameObject.TryGetComponent<IHealth>(out var health))
-            {
-                health.TakeDamage(_damage);
-            }
-            if (collision.gameObject.TryGetComponent<Rigidbody>(out var rv))
-            {
-                Vector3 dir = Vector3.forward;
-                _rb.AddForce(dir * _impact, ForceMode.Impulse);
-            }
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
 
-    /// <summary>
-    /// 発射位置から
-    /// </summary>
-    void GoStraight()
-    {
-        _rb.velocity = this.transform.forward * _bulletSpeed;
+        BulletHit(collision);
+        Destroy(this.gameObject);
     }
-    void Homing()
+    void BulletHit(Collision collision)
     {
-        if(_targetObject == this.gameObject)
+        if ( ! collision.gameObject.CompareTag(_targetTag))
+            return;
+        if (collision.gameObject.TryGetComponent<IHealth>(out var health))
         {
-            GoStraight();
+            health.TakeDamage(_damage);
         }
-        else if (_targetObject)
+        if (collision.gameObject.TryGetComponent<Rigidbody>(out var rv))
         {
-            transform.LookAt(_targetObject.transform.position);
-            _rb.velocity = this.transform.forward * _bulletSpeed;
-        }
-        else
-        {
-            GoStraight();
+            Vector3 dir = Vector3.forward;
+            _rb.AddForce(dir * _impact, ForceMode.Impulse);
         }
     }
 

@@ -21,23 +21,23 @@ namespace Attack
         /// <summary>
         /// プレイヤーの攻撃だけはヒットストップさせる
         /// </summary>
-        public override void AttackEvent()
+        private protected override void AttackEvent()
         {
-            foreach (var target in Physics.OverlapSphere(base.GetAttackRangeCenter(), base.AttackRangeRadius)
-                .Where(x => !x.gameObject.CompareTag(base.OwnTag) && x.TryGetComponent<IHealth>(out _targetIH))) 
+            foreach (var target in Physics.OverlapSphere(base.GetAttackRangeCenter(), base.AttackRangeRadius())
+                .Where(x => !x.gameObject.CompareTag(base.OwnTag()) && x.TryGetComponent<IHealth>(out _targetIH))) 
             {
                 if (!_isHitStop)
                 {
                     _isHitStop = true;
                     StartCoroutine(HitStopCoroutine(() => { _isHitStop = false; }));
-                    Instantiate(base.HitEffect, GetAttackRangeCenter(), this.transform.rotation);
+                    Instantiate(base.HitEffect(), GetAttackRangeCenter(), this.transform.rotation);
                 }
                 var targetRB = target.GetComponent<Rigidbody>();
                 if (targetRB != null)
                 {
-                    targetRB.AddForce(this.transform.forward * base.ImpactPower, ForceMode.Impulse);
+                    targetRB.AddForce(this.transform.forward * base.ImpactPower(), ForceMode.Impulse);
                 }
-                _targetIH.TakeDamage((int)base.AttackPower);//ダメージを与える
+                _targetIH.TakeDamage(base.DamagePower());//ダメージを与える
             }
         }
 

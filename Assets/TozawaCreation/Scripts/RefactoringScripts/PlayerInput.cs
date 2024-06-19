@@ -61,7 +61,8 @@ public class PlayerInput : MonoBehaviour,IPause
     }
     IEnumerator  DetectAttack()
     {
-        if(_isCorutineRunning)yield break; _isCorutineRunning = true;
+        if(_isCorutineRunning)yield break;
+        _isCorutineRunning = true;
         yield return new WaitWhile(() => _vStick.Pressed());
         _attackParambool = true;
         _isCorutineRunning = false;

@@ -12,10 +12,7 @@ public class IntroductionGuideUI : MonoBehaviour
     [SerializeField] Text _guideText;
     IntroductionGuideData _currentData;
     int _currentIndex = 0;
-    private void OnEnable()
-    {
-        _pauseEvent.EventOccurrence();
-    }
+    
     private void Start()
     {
         ReferData();

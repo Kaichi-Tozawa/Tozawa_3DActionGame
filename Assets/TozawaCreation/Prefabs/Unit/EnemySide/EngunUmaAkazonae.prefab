@@ -410,12 +410,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3955deea419bc2641873dec846ceee20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackPower: 20
-  _impactPower: 1
+  _damage: 30
+  _impact: 0
   _hitEffect: {fileID: 8400184054722682649, guid: 79052b7c0c5195b418ac8edee4c14839, type: 3}
   _bullet: {fileID: 5841511241600929102, guid: 2920a3e0bfbbc6946b163f64b8a827a9, type: 3}
   _nozzle: {fileID: 1341063774725246468}
-  bulletType: 1
+  _bulletType: 0
   _bulletSpeed: 30
 --- !u!114 &1341063774858396455
 MonoBehaviour:

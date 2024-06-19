@@ -9,8 +9,8 @@ public class MaterialSufaceAnimation : MonoBehaviour,IPause
     [SerializeField] float _offsetsY = 0.7f;
     Renderer _currentRenderer;
     float _value = 0;
-    Vector2 _offset ;
-    Vector2 _tiling ;
+    Vector2 _offset;
+    Vector2 _tiling;
     bool _active = true ;
     private void Start()
     {

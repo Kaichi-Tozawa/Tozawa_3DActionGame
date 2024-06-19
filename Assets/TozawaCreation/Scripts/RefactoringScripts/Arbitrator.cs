@@ -10,21 +10,18 @@ using UnityEngine.UI;
 public class Arbitrator : MonoBehaviour
 {
     string _resulttext ;
-    GameObject _instance = null;
     [SerializeField] UnityEvent _onGameFinished;
     [SerializeField] float _graceTime = 1.5f;
     public void PostWarProcessing(bool isWin)
     {
         _resulttext = isWin ? "èü\nóò" : "îs\nñk";
         Domination(isWin);
-        _instance = FindObjectOfType(typeof(Arbitrator)).GameObject();
-        _instance.GetComponent<Arbitrator>().SetResultText(_resulttext);
-        _instance.GetComponent<Arbitrator>().Invoke(nameof(DoUnityEvent), _graceTime);
-        _instance.GetComponent<Arbitrator>().enabled = false;
+        SetResultText(_resulttext);
+        Invoke(nameof(DoUnityEvent), _graceTime);
+        this.enabled = false;
     }
     public void SetResultText(string t)
     {
-        Debug.Log(t);
         _resulttext = t;
     }
     public void SetResultTextOnUI(Text ui)
@@ -63,8 +60,6 @@ public class Arbitrator : MonoBehaviour
                 StopCompornent<NPCComander>(obj);
                 StopCompornent<WallAvoid>(obj);
             }
-
-
         }
     }
     void DoUnityEvent()

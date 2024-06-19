@@ -875,7 +875,7 @@ GameObject:
   - component: {fileID: 9058663882135522881}
   - component: {fileID: 961949782933817527}
   - component: {fileID: 8783630359990292941}
-  - component: {fileID: 1006510857897495937}
+  - component: {fileID: 8893627048485204084}
   m_Layer: 7
   m_Name: Player
   m_TagString: PlayerSide
@@ -935,9 +935,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8703886913298581765}
   serializedVersion: 4
-  m_Mass: 3
-  m_Drag: 3
-  m_AngularDrag: 3
+  m_Mass: 2
+  m_Drag: 2
+  m_AngularDrag: 2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -989,8 +989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea23b2470688c454dbf0ea8fc2b8ae09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackPower: 7
-  _impactPower: 1
+  _damage: 0
+  _impact: 0
   _hitEffect: {fileID: 7700009343649574272, guid: d9a379089f456aa458d2dae019e55d44, type: 3}
   _attackRangeCenter: {x: 0, y: 1, z: 1}
   _attackRangeRadius: 2
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _quickSpeedScale: 4
---- !u!114 &1006510857897495937
+--- !u!114 &8893627048485204084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6209e90923eb5e4bafd89aa045f2abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 5
+  _moveSpeed: 7
   _defaultMoveParamName: PlayerSpeed
   _attackParamName: PlayerAttackBool
   _Imediater:

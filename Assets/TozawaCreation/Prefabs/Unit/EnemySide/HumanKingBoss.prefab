@@ -750,7 +750,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925815360191783515}
   serializedVersion: 4
-  m_Mass: 5
+  m_Mass: 6
   m_Drag: 1
   m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -776,7 +776,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925815360191783515}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7fa68e5b6daaa2f43b54236692c701ce, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -821,8 +821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d2b61a39d33f04090c895b1f323c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackPower: 20
-  _impactPower: 30
+  _damage: 30
+  _impact: 10
   _hitEffect: {fileID: 2647806381547812082, guid: 741ce35dc6dd6fd42bee9b111f113089, type: 3}
   _attackRangeCenter: {x: 0, y: 0.29, z: 3.82}
   _attackRangeRadius: 3

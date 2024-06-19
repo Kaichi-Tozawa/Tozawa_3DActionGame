@@ -18,7 +18,6 @@ public class CameraShake : MonoBehaviour
     IEnumerator SlowMotionCorutine(float slowtimeScale,float timewhile)
     {
         _cameraAnim.SetTrigger("CameraShake");
-
         Time.timeScale = slowtimeScale;
         yield return new WaitForSecondsRealtime(timewhile);
         Time.timeScale = 1;

@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class NPCComander : MonoBehaviour,IPause,INPCComander
@@ -31,8 +29,6 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
         Initialize();
         StartTimer();
     }
-
-
     void StartTimer()
     {
         StartCoroutine(StateBehaviorTimerCorutine(() =>
@@ -71,7 +67,6 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
                 break;
         }
     }
-    
 
     void StandBy()
     {
@@ -92,7 +87,7 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
     }
     void DefenceApproach()
     {
-        _inRange = (_guardDistance > Vector3.Distance(transform.position,_guardTarget.transform.position))  ? true : false;
+        _inRange = (_guardDistance > Vector3.Distance(transform.position,_guardTarget.transform.position));
         if(_inRange&& !_isActiveGuard)
         {
             if (_iUnitDetector.TargetDistance() <= _attackRange)
@@ -129,7 +124,7 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
         if(_priorityTarget  )
         {
             _moveDirection = _priorityTarget.transform.position - this.transform.position;
-            if(Vector3.Distance(this.transform.position, _priorityTarget.transform.position) <_attackRange)
+            if(Vector3.Distance(this.transform.position, _priorityTarget.transform.position) <_attackRange*2)
             {
                 _priorityTarget = null;
             }
@@ -142,13 +137,10 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
     
     void ConbatMove()
     {
+        _moveDirection = _iUnitDetector.TargetDirection();
         if (_iUnitDetector.TargetDistance() <= _attackRange)
         {
             CancelAction();
-        }
-        else
-        {
-            _moveDirection = _iUnitDetector.TargetDirection();
         }
     }
 
@@ -156,6 +148,7 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
     {
         if (_iUnitDetector.TargetDistance() < _attackRange && _iUnitDetector.TargetDistance() != 0)
         {
+            _iMove.Behold(_iUnitDetector.TargetDirection());
             _attackParam = true;
         }
     }
@@ -175,7 +168,6 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
     IEnumerator StateBehaviorTimerCorutine(Action action, float operatingtime)
     {
         _state = _iRevolver.CurrentState();
-        //Debug.Log(_state+"ŠJŽn"+operatingtime);
         yield return new WaitForSeconds(operatingtime);
         _iRevolver.NextState();
         action.Invoke();
@@ -219,9 +211,9 @@ public class NPCComander : MonoBehaviour,IPause,INPCComander
         return _iMove;
     }
 
-    void INPCComander.SetPriorityTarget(GameObject t)
+    void INPCComander.SetPriorityTarget(GameObject target)
     {
-        _priorityTarget = t;
+        _priorityTarget = target;
     }
 
     void INPCComander.DefenceContract(GameObject obj)

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Linq;
 using System;
 
-public static class AnimParamerterDividing 
+public static class AnimParameterSetting 
 {
     /// <summary>
     /// アニメーターのSet関数代替

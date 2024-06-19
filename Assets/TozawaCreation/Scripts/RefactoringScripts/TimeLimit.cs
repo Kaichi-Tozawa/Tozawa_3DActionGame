@@ -8,8 +8,8 @@ public class TimeLimit : MonoBehaviour,IPause
 {
     [SerializeField] Text _timerText;
     [SerializeField] float _timeLimit;
-    UnityEvent _onTimerStop = new UnityEvent();
-    UnityEvent _onTimerStart = new UnityEvent();
+    [SerializeField]UnityEvent _onTimerStop = new UnityEvent();
+    [SerializeField]UnityEvent _onTimerStart = new UnityEvent();
     [SerializeField, Header("時間切れになった時に行う処理")] UnityEvent _onTimeOver;
     bool _isTimerActive = false;
    

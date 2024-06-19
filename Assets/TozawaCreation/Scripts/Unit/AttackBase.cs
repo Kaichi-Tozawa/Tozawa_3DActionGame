@@ -8,29 +8,37 @@ namespace Attack
     /// </summary>
     public class AttackBase : MonoBehaviour
     {
-        [SerializeField, Header("ダメージとなる攻撃力")] int _attackPower = 0;
-        [SerializeField, Header("ノックバックさせる衝撃力")] float _impactPower;
+        [SerializeField, Header("ダメージとなる攻撃力")] int _damage = 0;
+        [SerializeField, Header("ノックバックさせる衝撃力")] float _impact;
         [SerializeField, Header("攻撃がヒットしたときのエフェクト")] GameObject _hitEffect;
         string _ownTag;
         protected void Awake()
         {
             _ownTag = this.gameObject.tag;
         }
-        protected float AttackPower
+
+        private protected virtual void AttackEvent(){ }
+        public void OnAttackEvent() 
         {
-            get { return _attackPower; }
+            AttackEvent();
         }
-        protected float ImpactPower
+
+        protected int DamagePower()
         {
-            get { return _impactPower; }
+            return _damage;
         }
-        protected GameObject HitEffect
+        protected float ImpactPower()
         {
-            get { return _hitEffect; }
+           return _impact;
         }
-        protected string OwnTag
+        protected GameObject HitEffect()
         {
-            get { return _ownTag; }
+            return _hitEffect;
         }
+        protected string OwnTag()
+        {
+            return _ownTag;
+        }
+
     }
 }

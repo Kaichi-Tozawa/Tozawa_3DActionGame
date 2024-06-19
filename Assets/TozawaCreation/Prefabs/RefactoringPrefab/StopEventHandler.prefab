@@ -60,3 +60,6 @@ MonoBehaviour:
   _gameEvents:
   - {fileID: 11400000, guid: ecdffb142b8cea449972db52087cc3b4, type: 2}
   - {fileID: 11400000, guid: 9fd50e9654139ca439a270c5dab1c8f8, type: 2}
+  _notificateEvents:
+    m_PersistentCalls:
+      m_Calls: []

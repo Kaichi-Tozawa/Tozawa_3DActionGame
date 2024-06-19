@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tomb : MonoBehaviour
+public class SummonableObject : MonoBehaviour
 {
     [SerializeField] GameEvent _skeletonSummonEvent;
     [SerializeField] Transform _spawnPos;

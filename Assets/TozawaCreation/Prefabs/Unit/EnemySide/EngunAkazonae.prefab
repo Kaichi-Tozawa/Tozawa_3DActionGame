@@ -1213,8 +1213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d2b61a39d33f04090c895b1f323c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _attackPower: 10
-  _impactPower: 3
+  _damage: 40
+  _impact: 0
   _hitEffect: {fileID: 7700009343649574272, guid: d9a379089f456aa458d2dae019e55d44, type: 3}
   _attackRangeCenter: {x: 0, y: 0.81, z: 1}
   _attackRangeRadius: 2
