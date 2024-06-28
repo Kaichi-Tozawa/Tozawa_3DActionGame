@@ -1,12 +1,135 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\git\\Tozawa_3DActionGame\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|c:\\git\\tozawa_3dactiongame\\assets\\tozawacreation\\scripts\\mvp_eventpattern\\mvptest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\mvp_eventpattern\\mvptest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|C:\\git\\Tozawa_3DActionGame\\assets\\tozawacreation\\scripts\\mvp_eventpattern\\timecount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\mvp_eventpattern\\timecount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|c:\\git\\tozawa_3dactiongame\\assets\\tozawacreation\\scripts\\mvp_eventpattern\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\mvp_eventpattern\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|C:\\git\\Tozawa_3DActionGame\\assets\\tozawacreation\\scripts\\mvp_eventpattern\\idatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\mvp_eventpattern\\idatasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|C:\\git\\Tozawa_3DActionGame\\assets\\tozawacreation\\scripts\\mvp_eventpattern\\timelimitui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\mvp_eventpattern\\timelimitui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|C:\\git\\Tozawa_3DActionGame\\assets\\tozawacreation\\scripts\\mvp_eventpattern\\timedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\mvp_eventpattern\\timedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|C:\\git\\Tozawa_3DActionGame\\assets\\tozawacreation\\scripts\\mvp_eventpattern\\idatadestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{448280A4-7E0B-B9CA-CE33-710AE3807283}|Assembly-CSharp.csproj|solutionrelative:assets\\tozawacreation\\scripts\\mvp_eventpattern\\idatadestination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MVPTest.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\MVPTest.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\MVPTest.cs",
+              "ToolTip": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\MVPTest.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\MVPTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T03:36:48.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimeLimitUI.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeLimitUI.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeLimitUI.cs",
+              "ToolTip": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeLimitUI.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeLimitUI.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T07:49:44.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimeCount.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeCount.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeCount.cs",
+              "ToolTip": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeCount.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeCount.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvwcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T07:34:48.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDataDestination.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataDestination.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataDestination.cs",
+              "ToolTip": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataDestination.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataDestination.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T07:05:04.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TimeData.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeData.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeData.cs",
+              "ToolTip": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeData.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\TimeData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA6wAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:17:57.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IDataSource.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataSource.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataSource.cs",
+              "ToolTip": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataSource.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\IDataSource.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:08:10.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Presenter.cs",
+              "DocumentMoniker": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\Presenter.cs",
+              "RelativeDocumentMoniker": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\Presenter.cs",
+              "ToolTip": "C:\\git\\Tozawa_3DActionGame\\Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\Presenter.cs",
+              "RelativeToolTip": "Assets\\TozawaCreation\\Scripts\\MVP_EventPattern\\Presenter.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:02:18.208Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
