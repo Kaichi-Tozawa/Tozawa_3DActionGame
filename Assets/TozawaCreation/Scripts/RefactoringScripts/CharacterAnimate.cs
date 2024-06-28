@@ -29,7 +29,6 @@ public class CharacterAnimate :IAttackAnimate,IMoveAnimate
 
     void IPause.Pause()
     {
-        
         _playerAnim.speed = 0;
     }
 

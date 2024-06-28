@@ -1082,13 +1082,14 @@ GameObject:
   - component: {fileID: 4738252460831567806}
   - component: {fileID: 4738252460831567807}
   - component: {fileID: 4738252460831567792}
+  - component: {fileID: 7289939726806647640}
   m_Layer: 6
   m_Name: EngunAkazonae
   m_TagString: EnemySide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4738252460831567803
 Transform:
   m_ObjectHideFlags: 0
@@ -1196,7 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5471a99970f1e641a5901de3b0d9365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialHealth: 80
+  _initialHealth: 100
   _dropItemPrefab: {fileID: 7787116994682865691, guid: 36c519f8ec8eff34a9035bb90141f3c5, type: 3}
   _deathEffect: {fileID: 5773268541935943808, guid: 32493caef71dfd847be2b1009bb252b9, type: 3}
   _ragDollRootBone: {fileID: 4738252461545665006}
@@ -1214,10 +1215,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 40
-  _impact: 0
+  _impact: 15
   _hitEffect: {fileID: 7700009343649574272, guid: d9a379089f456aa458d2dae019e55d44, type: 3}
   _attackRangeCenter: {x: 0, y: 0.81, z: 1}
   _attackRangeRadius: 2
+--- !u!114 &7289939726806647640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738252460831567794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121465ace49d0664a96e1f65b14455a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _workTimes:
+  - 1
+  - 5
+  - 2
+  _moveSpeed: 10
+  _attackRange: 3
+  _guardDistance: 20000
+  _minimalSetBackTime: 20000
 --- !u!1 &4738252460849270574
 GameObject:
   m_ObjectHideFlags: 0

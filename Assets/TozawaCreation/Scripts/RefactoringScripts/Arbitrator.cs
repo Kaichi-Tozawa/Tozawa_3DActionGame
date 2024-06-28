@@ -46,9 +46,9 @@ public class Arbitrator : MonoBehaviour
                 StopCompornent<UnitCreator>(obj);
                 obj.GameObject().SetActive(false);
             }
-            if (obj.GameObject().TryGetComponent<TimeLimit>(out var tl))
+            if (obj.GameObject().TryGetComponent<RuinedTimeLimit>(out var tl))
             {
-                StopCompornent<TimeLimit>(obj);
+                StopCompornent<RuinedTimeLimit>(obj);
                 
             }
             if(obj.GameObject().TryGetComponent<AreaManager>(out var am))

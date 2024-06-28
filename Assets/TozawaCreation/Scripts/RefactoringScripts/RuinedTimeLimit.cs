@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 [DefaultExecutionOrder(0)]
-public class TimeLimit : MonoBehaviour,IPause
+public class RuinedTimeLimit : MonoBehaviour,IPause
 {
     [SerializeField] Text _timerText;
     [SerializeField] float _timeLimit;
